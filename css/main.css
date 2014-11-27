@@ -1,0 +1,81 @@
+body,
+body > div,
+body > div > div {
+  background: #EAEBED;
+}
+
+.bg-white {
+  background: white;
+}
+
+form button[type=submit] {
+  text-transform: uppercase;
+}
+
+header {
+  height: 520px;
+  background: #f87e47;
+}
+
+.wrapper {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+ul.menu {
+  height: 60px;
+  background: white;
+  width: 460px;
+  padding: 0;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+ul.menu li {
+  width: 33.3%;
+  padding: 0;
+  text-align: center;
+}
+
+ul.menu li a {
+  line-height: 60px;
+  padding: 0;
+  font-weight: 700;
+  color: #3b3b3b;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.order-form {
+  width: 300px;
+  padding: 40px;
+  margin-top: 60px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.order-form h4 {
+  text-transform: uppercase;
+  font-size: 15.2px;
+}
+
+.order-form h4 big {
+  font-size: 27.2px;
+}
+
+.order-form .email-input {
+  border: #f87e47 solid 2px;
+  border-radius: 4px;
+  background: transparent;
+  color: #a3a199;
+}
+
+.order-form .order-button {
+  background: #f87e47;
+  color: white;
+  border-radius: 4px;
+  line-height: 80px;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
