@@ -1,0 +1,26 @@
+{
+  "name": "present",
+  "version": "0.0.1",
+  "authors": [
+    "Artyom <2urnix@gmail.com>"
+  ],
+  "description": "present site",
+  "license": "MIT",
+  "homepage": "umasterov.org/present",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.4",
+    "restangular": "~1.4.0",
+    "bootstrap": "~3.3.1",
+    "angular-ui-router": "~0.2.13",
+    "jquery": "~2.1.1",
+    "angular-translate": "~2.4.2"
+  }
+}
