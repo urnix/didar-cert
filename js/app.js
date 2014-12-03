@@ -7,7 +7,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         url: '/',
         views: {
             'content': {
-                templateUrl: 'js/showcase.html',
+                templateUrl: 'templates/showcase.html',
                 controller: 'ShowcaseCtrl'
             }
         }

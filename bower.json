@@ -1,12 +1,12 @@
 {
-    "name": "didar-cert",
+  "name": "didar-cert",
   "version": "0.0.1",
   "authors": [
-      "Urnix <2urnix@gmail.com>"
+    "Urnix <2urnix@gmail.com>"
   ],
-    "description": "didar-cert site",
+  "description": "didar-cert site",
   "license": "MIT",
-    "homepage": "umasterov.org/cert",
+  "homepage": "umasterov.org/cert",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,11 +16,11 @@
     "tests"
   ],
   "dependencies": {
-      "jquery": "~2.1.1",
+    "jquery": "~2.1.1",
     "angular": "~1.3.4",
-      "angular-ui-router": "~0.2.13",
+    "angular-ui-router": "~0.2.13",
     "restangular": "~1.4.0",
-      "angular-translate": "~2.4.2",
-      "bootstrap": "~3.3.1"
+    "angular-translate": "~2.4.2",
+    "bootstrap": "~3.3.1"
   }
 }
