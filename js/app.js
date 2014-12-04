@@ -76,10 +76,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             if (response.status == 'ok') {
                 alert('Адрес электронной почты успешно отправлен');
             } else {
-                alert('err');
+                alert('Ошибка. Адрес электронной почты не отправлен.');
             }
         }, function () {
-            alert('err');
+            alert('Ошибка. Адрес электронной почты не отправлен.');
         })
     };
 }]);
