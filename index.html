@@ -73,33 +73,35 @@
 <div class="wrapper">
 
     <div class="bg-white">
-        <h3>Как это работает</h3>
+        <h3 class="block_header">Как это работает</h3>
 
         <div class="col-sm-4">
-            <div class="circle"></div>
-            Заказ<br>
+            <div class="circle">1</div>
+            <h6 class="sub_header">Заказ сертификата</h6>
             <hr>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+            <div class="block_description">Для этого Вы должны оставить электронный адрес (в левом верхнем углу, в поле
+                "Ваш адрес электронной
+                почты") и нажать кнопку "ЗАКАЗАТЬ". После этого мы свяжемся с Вами. В течение суток подарочный
+                сертификат будет у Вас.
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="circle"></div>
-            Подарок<br>
+            <div class="circle">2</div>
+            <h6 class="sub_header">Подарок</h6>
             <hr>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+            <div class="block_description">Самый ответственный этап! Теперь, Наш подарочный сертификат Вы можете вручить
+                дорогим и любимым
+                друзьям!
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="circle"></div>
-            Активация<br>
+            <div class="circle">3</div>
+            <h6 class="sub_header">Активация</h6>
             <hr>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+            <div class="block_description">Ваш друг в течение месяца может использовать свой сертификат на предложенные
+                Нами товары и услуги. Вам
+                больше не нужно ломать голову ЧТО? КОМУ? и КАК? дарить. Этот подарок будет нужным и индивидуальным, в
+                зависимости от желаний Вашего товарища.
             </div>
         </div>
 
@@ -121,7 +123,7 @@
     <div class="bg-white col-sm-12 clearfix" ng-controller="CertOrderCtrl">
         <form class="form-inline" name="form_order_1" ng-submit="sendCertOrder()">
             <div class="form-group">
-                <label class="col-sm-4">Хочу заказать сертификат</label>
+                <label class="col-sm-4 header">Хочу заказать сертификат</label>
 
                 <div class="col-sm-4">
                     <input type="email" class="form-control" placeholder="Введите свой email"
@@ -132,7 +134,8 @@
         </form>
     </div>
 
-    <div>Copyright <a href="http://umasterov.org">Umasterov</a> 2014</div>
+    <div class="footer">© 2014 магазин дивных подарков "ДиДар". Все права защищены. Сайт создан <a
+            href="http://umasterov.org">У мастеров</a></div>
 
 </div>
 

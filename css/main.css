@@ -17,10 +17,20 @@ header {
   background: #f87e47 url('../imgs/top1.jpg') no-repeat center;
 }
 
+.navbar-static-top {
+    border-bottom-width: 0;
+}
+
 .wrapper {
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.navbar-brand {
+    background: url('../imgs/logo.png') no-repeat center;
+    width: 280px;
+    height: 130px;
 }
 
 ul.menu {
@@ -30,6 +40,7 @@ ul.menu {
   padding: 0;
   border-radius: 4px;
   margin-top: 20px;
+    margin-right: -10px;
 }
 
 ul.menu li {
@@ -49,8 +60,10 @@ ul.menu li a {
 
 .order-form {
   width: 300px;
+    height: 300px;
   padding: 40px;
-  margin-top: 60px;
+    margin-top: 10px;
+    margin-left: -10px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.5);
 }
@@ -84,11 +97,33 @@ ul.menu li a {
   height: 100px;
   width: 100px;
   border: 1px solid;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    line-height: 95px;
   border-radius: 50px;
 }
 
 .items-row h3 {
   margin: 20px 0;
+}
+
+h3.block_header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f87e47;
+    font-size: 28px;
+    padding-bottom: 12px;
+}
+
+h6.sub_header {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+div.block_description {
+    text-align: center;
 }
 
 .item {
@@ -137,4 +172,34 @@ ul.menu li a {
   /*background: #F87E47;*/
   /*opacity: 0.92;*/
   background-color: #ffffff;
+}
+
+.form-inline .form-group {
+    width: 100%;
+    background: #A3A199;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-inline label.header {
+    text-transform: uppercase;
+    padding-top: 7px;
+}
+
+.form-inline input {
+    width: 100% !important;
+}
+
+.form-inline button {
+    background: #F87E47;
+    color: White;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #A3A199;
+    margin-bottom: 20px;
 }
