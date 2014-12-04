@@ -13,7 +13,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         }
     });
 }).config(function (RestangularProvider, $translateProvider) {
-    RestangularProvider.setBaseUrl('/gift');
+    RestangularProvider.setBaseUrl('/didar-api');
 
     $translateProvider.translations('en', {
         'products': 'Products:',

@@ -45,11 +45,11 @@
     <div class="clearfix">
         <div class="item col-xs-6 col-sm-4 col-md-2 " ng-repeat="product in products">
             <div class="item-image-container">
-                <a ui-sref="products.view({id:product.id})"><img class="item-image" ng-src="{{product.img}}"/></a>
+                <a><img class="item-image" ng-src="{{product.img}}"/></a>
             </div>
-            <div class="name"><a ui-sref="products.view({id:product.id})" ng-bind="product.name"></a></div>
+            <div class="name"><a ng-bind="product.name"></a></div>
             <div class="description">
-                <a ui-sref="products.view({id:product.id})" ng-bind="product.description | cut:true:55"
+                <a ng-bind="product.description | cut:true:55"
                    title="{{product.description}}"></a>
             </div>
         </div>
