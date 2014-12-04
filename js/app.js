@@ -20,7 +20,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         'measures': 'Measures:'
     });
     $translateProvider.translations('ru', {
-        'products': 'На что потратить',
+        'products': 'На что потратить сертификат',
         'measures': 'Когда потратить'
     });
     $translateProvider.preferredLanguage('ru');

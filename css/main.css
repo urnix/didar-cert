@@ -1,7 +1,7 @@
 body,
 body > div,
 body > div > div {
-  background: #EAEBED;
+  /*background: #EAEBED;*/
 }
 
 .bg-white {
@@ -14,7 +14,7 @@ form button[type=submit] {
 
 header {
   height: 520px;
-  background: #f87e47;
+  background: #f87e47 url('../imgs/top1.jpg') no-repeat center;
 }
 
 .wrapper {
@@ -78,4 +78,63 @@ ul.menu li a {
   line-height: 80px;
   font-size: 30px;
   margin-bottom: 40px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 50px;
+}
+
+.items-row h3 {
+  margin: 20px 0;
+}
+
+.item {
+  padding: 0 5px;
+  color: #333;
+}
+
+.item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.item .item-image-container {
+  height: 100px;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.item .item-image {
+  height: 100%;
+}
+
+.item .name {
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item .description {
+  height: 51px;
+  font-size: 12px;
+}
+
+.section-map {
+  position: relative;
+}
+
+.section-where {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 230px;
+  width: 285px;
+  /*background: #F87E47;*/
+  /*opacity: 0.92;*/
+  background-color: #ffffff;
 }
