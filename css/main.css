@@ -93,6 +93,10 @@ ul.menu li a {
   margin-bottom: 40px;
 }
 
+.order-form .order-button:hover {
+    background: #ff9966;
+}
+
 .circle {
   height: 100px;
   width: 100px;
@@ -157,6 +161,7 @@ div.block_description {
 .item .description {
   height: 51px;
   font-size: 12px;
+    text-align: center;
 }
 
 .section-map {
@@ -176,7 +181,8 @@ div.block_description {
 
 .form-inline .form-group {
     width: 100%;
-    background: #A3A199;
+    background: url('../imgs/order_background.jpg') no-repeat center;
+    border-radius: 3px;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -191,10 +197,14 @@ div.block_description {
     width: 100% !important;
 }
 
-.form-inline button {
+.form-inline button.order-button {
     background: #F87E47;
     color: White;
     font-weight: bold;
+}
+
+.form-inline button.order-button:hover {
+    background: #ff9966;
 }
 
 .footer {

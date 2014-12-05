@@ -1,33 +1,37 @@
-<div class="items-row margin-bottom-10">
-    <h3 translate="products"></h3>
+<div class="clearfix">
+    <div class="items-row margin-bottom-10 margin-top-10">
+        <h3 class="block_header" translate="products"></h3>
 
-    <div class="clearfix">
-        <div class="item col-xs-6 col-sm-4 col-md-2 " ng-repeat="product in products">
-            <div class="item-image-container">
-                <a><img class="item-image" ng-src="{{product.img}}"/></a>
-            </div>
-            <div class="name"><a title="{{product.name}}" ng-bind="product.name"></a></div>
-            <div class="description">
-                <a ng-bind="product.description | cut:true:55"
-                   title="{{product.description}}"></a>
+        <div class="clearfix">
+            <div class="item col-xs-6 col-sm-4 col-md-2 " ng-repeat="product in products">
+                <div class="item-image-container">
+                    <a><img class="item-image" ng-src="{{product.img}}"/></a>
+                </div>
+                <div class="name"><a title="{{product.name}}" ng-bind="product.name"></a></div>
+                <div class="description">
+                    <a ng-bind="product.description | cut:true:55"
+                       title="{{product.description}}"></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="items-row margin-bottom-10">
-    <h3 translate="measures"></h3>
+</div><br>
+<div class="clearfix">
+    <div class="items-row margin-bottom-10">
+        <h3 class="block_header" translate="measures"></h3>
 
-    <div class="clearfix">
-        <div class="item col-xs-6 col-sm-4 col-md-2 " ng-repeat="measure in measures">
-            <div class="item-image-container">
-                <span class="helper"></span>
-                <a><img class="item-image" ng-src="{{measure.img}}"/></a>
-            </div>
-            <div class="name"><a title="{{product.name}}" ng-bind="measure.name"></a></div>
-            <div class="description">
-                <a ng-bind="measure.description | cut:true:55"
-                   title="{{measure.description}}"></a>
+        <div class="clearfix">
+            <div class="item col-xs-6 col-sm-4 col-md-2 " ng-repeat="measure in measures">
+                <div class="item-image-container">
+                    <span class="helper"></span>
+                    <a><img class="item-image" ng-src="{{measure.img}}"/></a>
+                </div>
+                <div class="name"><a title="{{product.name}}" ng-bind="measure.name"></a></div>
+                <div class="description">
+                    <a ng-bind="measure.description | cut:true:55"
+                       title="{{measure.description}}"></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</div><br>
