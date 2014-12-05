@@ -13,40 +13,41 @@
     <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-translate/angular-translate.js"></script>
     <script src="js/app.js"></script>
 </head>
 <body>
 
 <header class="navbar navbar-static-top">
     <div class="wrapper">
+
+        <!--LOGO & MENU-->
         <div class="navbar-header">
-            <a class="navbar-brand" href>
+            <a class="navbar-brand" href="#/">
                 <!--Логотип-->
             </a>
         </div>
         <nav class="collapse navbar-collapse">
             <ul class="menu nav navbar-nav navbar-right">
                 <li>
-                    <a href="#/#step1">
+                    <a href="#/#how-work">
                         <span>Как это работает</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#/#step2">
+                    <a href="#/#how-use">
                         <span>Как использовать</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#/#step3">
+                    <a href="#/#how-get">
                         <span>Как получить</span>
                     </a>
                 </li>
             </ul>
         </nav>
 
+        <!--TOP FORM-->
         <div class="clearfix" ng-controller="CertOrderCtrl">
-
             <div class="order-form">
                 <h4 class="text-center"><big>Хочу заказать</big> подарочный сертификат</h4>
 
@@ -70,12 +71,13 @@
 
 <div class="wrapper">
 
+    <!--HOW WORK-->
+    <a name="how-work"></a>
+
     <div class="clearfix">
         <h3 class="block_header">Как это работает? Проще простого!</h3>
 
         <div class="col-sm-4">
-            <a name="step1"></a>
-
             <div class="circle">1</div>
             <h6 class="sub_header">Заказ сертификата</h6>
             <hr>
@@ -93,8 +95,6 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <a name="step2"></a>
-
             <div class="circle">2</div>
             <h6 class="sub_header">Подарок</h6>
             <hr>
@@ -102,7 +102,8 @@
                 <!--Самый ответственный этап! Теперь, Наш подарочный сертификат Вы можете вручить-->
                 <!--дорогим и любимым друзьям!-->
 
-                Все дарят цветы, конфеты и деньги? Выделиеться из серой массы и завоюйте внимание виновника торжества.
+                Все дарят цветы, конфеты и деньги? Выделитесь из <span style="color: lightgray;">серой массы</span> и
+                завоюйте внимание виновника торжества.
                 Ваш подарок самый <strong>оригинальный</strong> и даёт возможность <strong>выбрать самое
                 желанное</strong>.
                 <br/><br/>
@@ -110,8 +111,6 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <a name="step3"></a>
-
             <div class="circle">3</div>
             <h6 class="sub_header">Активация</h6>
             <hr>
@@ -125,16 +124,22 @@
                 откроется выбор из множества <strong>полезных товаров</strong> и <strong>увлекательных
                 приключений</strong>.
                 <br/><br/>
-                Получив подарок в руки получатель ещё раз вспомнит Вас добрым словом.
+                Получив подарок в руки, одаряемый ещё раз вспомнит Вас добрым словом.
             </div>
         </div>
 
 
     </div>
+
+    <!--PRODUCTS & MEASURES-->
+    <a name="how-use"></a>
+
     <div ui-view="content" ng-show="loaded"></div>
 
     <!--MAP-->
     <div class="col-sm-12 clearfix">
+        <a name="how-get"></a>
+
         <h3 class="block_header">Где забрать?</h3>
 
         <div class="section-map">
@@ -156,6 +161,7 @@
         </div>
     </div>
 
+    <!--BOTTOM FORM-->
     <div class="col-sm-12 clearfix" ng-controller="CertOrderCtrl">
         <form class="form-inline" name="form_order_1" ng-submit="sendCertOrder()">
             <div class="form-group">

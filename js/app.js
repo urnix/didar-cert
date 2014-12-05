@@ -31,7 +31,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 
         return value + (tail || ' …');
     };
-}).controller('ShowcaseCtrl', ['$rootScope', '$scope', 'Restangular', function ($rootScope, $scope, Restangular) {
+}).controller('ShowcaseCtrl', ['$rootScope', '$scope', '$timeout', '$anchorScroll', 'Restangular', function ($rootScope, $scope, $timeout, $anchorScroll, Restangular) {
+    $timeout(function () {
+        $anchorScroll();
+    });
     var EndPoint = Restangular.all('certapi');
 
     var loadedCheckCount = 2;
