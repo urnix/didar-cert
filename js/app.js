@@ -1,4 +1,4 @@
-var myApp = angular.module('certApp', ['ui.router', 'restangular', 'pascalprecht.translate']);
+var myApp = angular.module('certApp', ['ui.router', 'restangular']);
 
 myApp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
@@ -12,18 +12,8 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     });
-}).config(function (RestangularProvider, $translateProvider) {
+}).config(function (RestangularProvider) {
     RestangularProvider.setBaseUrl('/didar-api');
-
-    $translateProvider.translations('en', {
-        'products': 'Products:',
-        'measures': 'Measures:'
-    });
-    $translateProvider.translations('ru', {
-        'products': 'На что потратить сертификат',
-        'measures': 'Когда потратить'
-    });
-    $translateProvider.preferredLanguage('ru');
 }).filter('cut', function () {
     return function (value, wordwise, max, tail) {
         if (!value) return '';

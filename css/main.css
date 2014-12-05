@@ -1,20 +1,17 @@
 body,
 body > div,
 body > div > div {
-  /*background: #EAEBED;*/
-}
-
-.bg-white {
-  background: white;
+    /*background: #EAEBED;*/
+    /*background: rgba(255, 232, 201, 0.32);*/
 }
 
 form button[type=submit] {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 header {
-  height: 520px;
-  background: #f87e47 url('../imgs/top1.jpg') no-repeat center;
+    height: 520px;
+    background: #f87e47 url('../imgs/top1.jpg') no-repeat center;
 }
 
 .navbar-static-top {
@@ -22,9 +19,9 @@ header {
 }
 
 .wrapper {
-  width: 940px;
-  padding: 0 10px;
-  margin: 0 auto;
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
 .navbar-brand {
@@ -34,63 +31,63 @@ header {
 }
 
 ul.menu {
-  height: 60px;
-  background: white;
-  width: 460px;
-  padding: 0;
-  border-radius: 4px;
-  margin-top: 20px;
+    height: 60px;
+    background: white;
+    width: 460px;
+    padding: 0;
+    border-radius: 4px;
+    margin-top: 20px;
     margin-right: -10px;
 }
 
 ul.menu li {
-  width: 33.3%;
-  padding: 0;
-  text-align: center;
+    width: 33.3%;
+    padding: 0;
+    text-align: center;
 }
 
 ul.menu li a {
-  line-height: 60px;
-  padding: 0;
-  font-weight: 700;
-  color: #3b3b3b;
-  text-decoration: none;
-  font-size: 14px;
+    line-height: 60px;
+    padding: 0;
+    font-weight: 700;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .order-form {
-  width: 300px;
+    width: 300px;
     height: 300px;
-  padding: 40px;
+    padding: 40px;
     margin-top: 10px;
     margin-left: -10px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .order-form h4 {
-  text-transform: uppercase;
-  font-size: 15.2px;
+    text-transform: uppercase;
+    font-size: 15.2px;
 }
 
 .order-form h4 big {
-  font-size: 27.2px;
+    font-size: 27.2px;
 }
 
 .order-form .email-input {
-  border: #f87e47 solid 2px;
-  border-radius: 4px;
-  background: transparent;
-  color: #a3a199;
+    border: #f87e47 solid 2px;
+    border-radius: 4px;
+    background: transparent;
+    color: #a3a199;
 }
 
 .order-form .order-button {
-  background: #f87e47;
-  color: white;
-  border-radius: 4px;
-  line-height: 80px;
-  font-size: 30px;
-  margin-bottom: 40px;
+    background: #f87e47;
+    color: white;
+    border-radius: 4px;
+    line-height: 80px;
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
 .order-form .order-button:hover {
@@ -98,18 +95,19 @@ ul.menu li a {
 }
 
 .circle {
-  height: 100px;
-  width: 100px;
-  border: 1px solid;
-    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    /*border: 1px solid #f87e47;*/
+    margin: 0 auto 30px;
     text-align: center;
     font-size: 48px;
     line-height: 95px;
-  border-radius: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 50px #f87e47;
 }
 
 .items-row h3 {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 h3.block_header {
@@ -131,52 +129,73 @@ div.block_description {
 }
 
 .item {
-  padding: 0 5px;
-  color: #333;
+    padding: 0 5px;
+    color: #333;
 }
 
 .item a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 .item .item-image-container {
-  height: 100px;
-  overflow-x: hidden;
-  text-align: center;
+    height: 100px;
+    overflow-x: hidden;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .item .item-image {
-  height: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .item .name {
-  text-align: center;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item .description {
-  height: 51px;
-  font-size: 12px;
+    height: 51px;
+    font-size: 12px;
     text-align: center;
 }
 
 .section-map {
-  position: relative;
+    position: relative;
+    height: 240px;
+    box-shadow: 0 0 10px gray;
 }
 
-.section-where {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  height: 230px;
-  width: 285px;
-  /*background: #F87E47;*/
-  /*opacity: 0.92;*/
-  background-color: #ffffff;
+.section-pay {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 230px;
+    width: 285px;
+    /*background-color: #FDE0B8;*/
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.section-pay ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.section-pay ul li {
+    list-style-type: none;
+}
+
+.section-pay .pay-method-icon {
+    float: left;
+    height: 40px;
+    margin: 10px 9px 10px 0;
+    border-radius: 5px;
 }
 
 .form-inline .form-group {

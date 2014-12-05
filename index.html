@@ -70,8 +70,8 @@
 
 <div class="wrapper">
 
-    <div class="bg-white">
-        <h3 class="block_header">Как это работает</h3>
+    <div class="clearfix">
+        <h3 class="block_header">Как это работает? Проще простого!</h3>
 
         <div class="col-sm-4">
             <a name="step1"></a>
@@ -79,10 +79,17 @@
             <div class="circle">1</div>
             <h6 class="sub_header">Заказ сертификата</h6>
             <hr>
-            <div class="block_description">Для этого Вы должны оставить электронный адрес (в левом верхнем углу, в поле
-                "Ваш адрес электронной
-                почты") и нажать кнопку "ЗАКАЗАТЬ". После этого мы свяжемся с Вами. В течение суток подарочный
-                сертификат будет у Вас.
+            <div class="block_description">
+                <!--Для этого Вы должны оставить электронный адрес (в левом верхнем углу, в поле-->
+                <!--"Ваш адрес электронной-->
+                <!--почты") и нажать кнопку "ЗАКАЗАТЬ". После этого мы свяжемся с Вами. В течение суток подарочный-->
+                <!--сертификат будет у Вас.-->
+
+                Для заказа <strong>универсального сертификата</strong>, Вам достаточно просто вписать свой email и
+                нажать
+                кнопку <strong>заказать</strong>. Мы свяжется с Вами и доставим сертификат в течении суток.
+                <br/><br/>
+                Теперь Вы точно пойдёте на торжество не с пустыми руками!
             </div>
         </div>
         <div class="col-sm-4">
@@ -91,9 +98,15 @@
             <div class="circle">2</div>
             <h6 class="sub_header">Подарок</h6>
             <hr>
-            <div class="block_description">Самый ответственный этап! Теперь, Наш подарочный сертификат Вы можете вручить
-                дорогим и любимым
-                друзьям!
+            <div class="block_description">
+                <!--Самый ответственный этап! Теперь, Наш подарочный сертификат Вы можете вручить-->
+                <!--дорогим и любимым друзьям!-->
+
+                Все дарят цветы, конфеты и деньги? Выделиеться из серой массы и завоюйте внимание виновника торжества.
+                Ваш подарок самый <strong>оригинальный</strong> и даёт возможность <strong>выбрать самое
+                желанное</strong>.
+                <br/><br/>
+                Подарите универсальный сертификат. Подарите выбор!
             </div>
         </div>
         <div class="col-sm-4">
@@ -102,10 +115,17 @@
             <div class="circle">3</div>
             <h6 class="sub_header">Активация</h6>
             <hr>
-            <div class="block_description">Ваш друг в течение месяца может использовать свой сертификат на предложенные
-                Нами товары и услуги. Вам
-                больше не нужно ломать голову ЧТО? КОМУ? и КАК? дарить. Этот подарок будет нужным и индивидуальным, в
-                зависимости от желаний Вашего товарища.
+            <div class="block_description">
+                <!--Ваш друг в течение месяца может использовать свой сертификат на предложенные-->
+                <!--Нами товары и услуги. Вам-->
+                <!--больше не нужно ломать голову ЧТО? КОМУ? и КАК? дарить. Этот подарок будет нужным и индивидуальным, в-->
+                <!--зависимости от желаний Вашего товарища.-->
+
+                Получателю сертификата достаточно просто зайти на сайт и ввести уникальный код. Перед ним
+                откроется выбор из множества <strong>полезных товаров</strong> и <strong>увлекательных
+                приключений</strong>.
+                <br/><br/>
+                Получив подарок в руки получатель ещё раз вспомнит Вас добрым словом.
             </div>
         </div>
 
@@ -115,16 +135,28 @@
 
     <!--MAP-->
     <div class="col-sm-12 clearfix">
-        <h4>Где забрать</h4>
+        <h3 class="block_header">Где забрать?</h3>
 
         <div class="section-map">
             <script type="text/javascript" charset="utf-8"
                     src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=gRYMM_lROqH6ob69NuJ1apcRcwqwmjlZ&height=240"></script>
-            <div class="section-where"><h4>Как оплатить</h4></div>
+            <div class="section-pay">
+                <h3 class="block_header">Как оплатить?</h3>
+                <h4>1) Наличными в точках продаж</h4>
+                <h4>2) В момент доставки курьером</h4>
+                <h4 class="clearfix">
+                    3) Прямо на сайте:
+                    <div>
+                        <img class="pay-method-icon" src="imgs/visa.png"/>
+                        <img class="pay-method-icon" src="imgs/mastercard.jpg"/>
+                        <img class="pay-method-icon" src="imgs/yandexmoney.jpg"/>
+                    </div>
+                </h4>
+            </div>
         </div>
     </div>
 
-    <div class="bg-white col-sm-12 clearfix" ng-controller="CertOrderCtrl">
+    <div class="col-sm-12 clearfix" ng-controller="CertOrderCtrl">
         <form class="form-inline" name="form_order_1" ng-submit="sendCertOrder()">
             <div class="form-group">
                 <label class="col-sm-4 header">Хочу заказать сертификат</label>
