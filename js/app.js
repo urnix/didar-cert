@@ -13,7 +13,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         }
     });
 }).config(function (RestangularProvider) {
-    RestangularProvider.setBaseUrl('/didar-api');
+    RestangularProvider.setBaseUrl('http://umasterov.org/didar-api');
 }).filter('cut', function () {
     return function (value, wordwise, max, tail) {
         if (!value) return '';
