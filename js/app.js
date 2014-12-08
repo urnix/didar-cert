@@ -4,7 +4,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
 
     $stateProvider.state('showcase', {
-        url: '/',
+        url: '/?utm_source',
         views: {
             'content': {
                 templateUrl: 'templates/showcase.html',
@@ -58,13 +58,17 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         alert('err');
         loadedCheck();
     });
-}]).controller('CertOrderCtrl', ['$rootScope', '$scope', 'Restangular', function ($rootScope, $scope, Restangular) {
+}]).controller('CertOrderCtrl', ['$rootScope', '$scope', '$stateParams', 'Restangular', function ($rootScope, $scope, $stateParams, Restangular) {
     var EndPoint = Restangular.all('certapi');
     $scope.cert_order_form = {};
     $scope.sendCertOrder = function () {
+        var source = 'unknown';
+        if ($stateParams.utm_source == 'vk') {
+            var source = 'vk_adv_iter1';
+        }
         EndPoint.customPOST({
             email: $scope.cert_order_form.email,
-            source: 'vk_adv_iter1'
+            source: source
         }, 'cert_order').then(function (response) {
             if (response.status == 'ok') {
                 alert('Адрес электронной почты успешно отправлен');
