@@ -1,4 +1,4 @@
-var myApp = angular.module('certApp', ['ui.router', 'restangular']);
+var myApp = angular.module('certApp', ['ui.router', 'restangular', 'ui.bootstrap']);
 
 myApp.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
@@ -31,7 +31,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 
         return value + (tail || ' …');
     };
-}).controller('ShowcaseCtrl', ['$rootScope', '$scope', '$timeout', '$anchorScroll', 'Restangular', function ($rootScope, $scope, $timeout, $anchorScroll, Restangular) {
+}).controller('ShowcaseCtrl', ['$rootScope', '$scope', '$timeout', '$anchorScroll', '$modal', 'Restangular', function ($rootScope, $scope, $timeout, $anchorScroll, $modal, Restangular) {
     $timeout(function () {
         $anchorScroll();
     });
@@ -58,7 +58,20 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
         alert('err');
         loadedCheck();
     });
-}]).controller('CertOrderCtrl', ['$rootScope', '$scope', '$stateParams', 'Restangular', function ($rootScope, $scope, $stateParams, Restangular) {
+
+    $scope.open = function () {
+        $modal.open({
+            templateUrl: 'myModalContent.html',
+            controller: 'ModalInstanceCtrl',
+            size: 'lg'
+        });
+    };
+
+}]).controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+    $scope.ok = function () {
+        $modalInstance.close();
+    };
+}).controller('CertOrderCtrl', ['$rootScope', '$scope', '$stateParams', 'Restangular', function ($rootScope, $scope, $stateParams, Restangular) {
     var EndPoint = Restangular.all('certapi');
     $scope.cert_order_form = {};
     $scope.sendCertOrder = function () {
